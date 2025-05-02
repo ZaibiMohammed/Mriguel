@@ -16,6 +16,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mriguel.Domain", "src\Core\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mriguel.Application", "src\Core\Application\Mriguel.Application.csproj", "{63A3AB11-9540-4F67-80D1-B8B8ED128211}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mriguel.Infrastructure.Persistence", "src\Infrastructure\Persistence\Mriguel.Infrastructure.Persistence.csproj", "{4E0C9F0D-E4F5-4C9B-8C0F-06C56B42C5C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{63A3AB11-9540-4F67-80D1-B8B8ED128211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63A3AB11-9540-4F67-80D1-B8B8ED128211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63A3AB11-9540-4F67-80D1-B8B8ED128211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E0C9F0D-E4F5-4C9B-8C0F-06C56B42C5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E0C9F0D-E4F5-4C9B-8C0F-06C56B42C5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E0C9F0D-E4F5-4C9B-8C0F-06C56B42C5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E0C9F0D-E4F5-4C9B-8C0F-06C56B42C5C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AD6DAADF-BB4E-4854-9263-B9B8C6223606} = {5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}
@@ -37,5 +43,6 @@ Global
 		{8AE36E8C-2D19-4C87-A551-A4B2C471E60E} = {5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}
 		{8DB4CF60-3AE9-4E4E-A3B5-2EF5E9CD335D} = {AD6DAADF-BB4E-4854-9263-B9B8C6223606}
 		{63A3AB11-9540-4F67-80D1-B8B8ED128211} = {AD6DAADF-BB4E-4854-9263-B9B8C6223606}
+		{4E0C9F0D-E4F5-4C9B-8C0F-06C56B42C5C7} = {E1F47079-36CB-4C6A-937E-2B0E3499B3A1}
 	EndGlobalSection
 EndGlobal
