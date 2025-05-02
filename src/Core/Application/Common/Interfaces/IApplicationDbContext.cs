@@ -11,16 +11,13 @@ namespace Mriguel.Application.Common.Interfaces
         DbSet<User> Users { get; }
         DbSet<Item> Items { get; }
         DbSet<Rental> Rentals { get; }
+        DbSet<Review> Reviews { get; }
         DbSet<ItemCategory> ItemCategories { get; }
         DbSet<ItemImage> ItemImages { get; }
         DbSet<ItemAvailability> ItemAvailabilities { get; }
-        DbSet<Review> Reviews { get; }
-        DbSet<Payment> Payments { get; }
-        DbSet<Address> Addresses { get; }
-        DbSet<UserVerification> UserVerifications { get; }
-        DbSet<PaymentMethod> PaymentMethods { get; }
         DbSet<RentalMessage> RentalMessages { get; }
-        
+        DbSet<Payment> Payments { get; }
+
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }
