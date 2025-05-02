@@ -15,9 +15,15 @@ namespace Mriguel.Application.Common.Interfaces
         DbSet<ItemCategory> ItemCategories { get; }
         DbSet<ItemImage> ItemImages { get; }
         DbSet<ItemAvailability> ItemAvailabilities { get; }
-        DbSet<RentalMessage> RentalMessages { get; }
         DbSet<Payment> Payments { get; }
-
-        Task<int> SaveChangesAsync(CancellationToken cancellationToken);
+        DbSet<RentalMessage> RentalMessages { get; }
+        DbSet<Address> Addresses { get; }
+        DbSet<UserVerification> UserVerifications { get; }
+        DbSet<PaymentMethod> PaymentMethods { get; }
+        
+        /// <summary>
+        /// Saves all changes made in this context to the database
+        /// </summary>
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }
