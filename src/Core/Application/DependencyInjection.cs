@@ -7,7 +7,7 @@ using Mriguel.Application.Common.Behaviors;
 namespace Mriguel.Application
 {
     /// <summary>
-    /// Extension methods for configuring dependency injection for the application layer
+    /// Application service extensions for dependency injection
     /// </summary>
     public static class DependencyInjection
     {
@@ -20,7 +20,6 @@ namespace Mriguel.Application
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddMediatR(cfg => {
                 cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-                cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(UnhandledExceptionBehavior<,>));
                 cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
                 cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(PerformanceBehavior<,>));
             });
